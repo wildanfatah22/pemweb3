@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kalkulator by Wildan</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Kalkulator</h1>
+        <form name="kirim">
+            <div class="container">
+                <label for="val1">Angka 1</label>
+                <input type="text" name="val1">
+            </div>
+            <div class="container">
+                <label for="val2">Angka 2</label>
+                <input type="text" name="val2">
+            </div>
+            <div class="operator">
+                <input type="button" value="+" onclick=tambah()>
+                <input type="button" value="-" onclick=kurang()>
+                <input type="button" value="x" onclick=kali()>
+                <input type="button" value="/" onclick=bagi()>
+            </div>
+            <div class="container">
+                <label for="hasil">Hasil</label>
+                <input type="text" name="hasil" disabled>
+            </div>
+            <br>
+            <p id="pesan"></p>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
